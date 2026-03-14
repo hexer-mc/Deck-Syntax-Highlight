@@ -2,7 +2,7 @@
   "name": "hexycards-deck",
   "displayName": "HexyCards Deck",
   "description": "Official HexyCards support for .deck flashcard files",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "publisher": "hexer",
   "icon": "icon.png",
   "repository": {
