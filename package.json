@@ -2,12 +2,16 @@
   "name": "hexycards-deck",
   "displayName": "HexyCards Deck",
   "description": "Official HexyCards support for .deck flashcard files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "hexer",
   "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/hexer-mc/Deck-Syntax-Highlight"
+  },
+  "homepage": "https://github.com/hexer-mc/Deck-Syntax-Highlight",
+  "bugs": {
+    "url": "https://github.com/hexer-mc/Deck-Syntax-Highlight/issues"
   },
   "engines": {
     "vscode": "^1.85.0"
@@ -20,6 +24,11 @@
     "onLanguage:deck",
     "onCommand:hexycards.applyColors"
   ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
   "contributes": {
     "commands": [
       {
@@ -30,8 +39,13 @@
     "languages": [
       {
         "id": "deck",
-        "aliases": ["HexyCards Deck", "deck"],
-        "extensions": [".deck"],
+        "aliases": [
+          "HexyCards Deck",
+          "deck"
+        ],
+        "extensions": [
+          ".deck"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
